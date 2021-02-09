@@ -1,4 +1,41 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div class="container">
+  <div>
+    Without position
+    <br />
+
+    <div class="btn-group" dropdown container="body">
+      <button id="button-container1" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+        aria-controls="dropdown-container1">
+        Dropdown on Body <span class="caret"></span>
+      </button>
+      <ul id="dropdown-container1" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-container1">
+        <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+        <li class="divider dropdown-divider"></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    With position
+    <br />
+    <div class="btn-group" dropdown container="body" placement="bottom left">
+      <button id="button-container2" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+        aria-controls="dropdown-container2">
+        Dropdown on Body<span class="caret"></span>
+      </button>
+      <ul id="dropdown-container2" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-container2">
+        <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+        <li class="divider dropdown-divider"></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
